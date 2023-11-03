@@ -4,9 +4,12 @@ class Human{
     
     public $name;
     public $age;
-    public $color;
     function sayHi(){
         echo "Hello\n";
+    }
+    // methods
+    function sayDetails(){
+        echo "My name is {$this->name}. I am {$this->age} Years old";
     }
 
 }
@@ -25,14 +28,11 @@ Class Dog{
 }
 
 $human = new Human();
-$human->sayHi();
+$human->sayHi(); //get property
 $human->name='Nawjesh';//set operation
 $human->age='32';
-$human->color='fair';
-
-echo $human->name;// get operation
-echo $human->age;
-echo $human->color;
+echo '<br>';
+$human->sayDetails();// get operation
 
 echo '<br>';
 
